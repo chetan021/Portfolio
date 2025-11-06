@@ -3,3 +3,11 @@
 @utility flex-center {
   @apply flex justify-center items-center;
 }
+
+@utility border {
+  @apply border-2 border-white-200
+}
+
+body{
+  background-color: #2C3E50;
+}
