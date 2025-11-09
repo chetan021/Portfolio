@@ -1,11 +1,53 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @utility flex-center {
-  @apply flex justify-center items-center;
+  @apply flex  items-center;
 }
 
-@utility border {
-  @apply border-2 border-white-200
+@utility border-custom {
+  @apply border-2 border-white;
+}
+
+@utility hero-heading-style {
+  @apply text-[3em] w-full md:text-[5em] text-[#ECF0F1];
+}
+.heading-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@utility heading-style {
+  @apply text-[3em] text-[#ECF0F1];
+}
+
+@utility body-para-style {
+  @apply text-[1em] text-[#7F8C8D] w-full md:w-[50%];
+}
+.body-para-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@utility para-style {
+  @apply text-[23px] text-[#BDC3C7]  md:w-[50%];
+}
+.para-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+@utility subheading-style {
+  @apply text-[1.5em] text-[#BDC3C7] w-full md:w-[50%];
+}
+.subheading-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 
 body{

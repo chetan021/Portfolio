@@ -34,14 +34,14 @@ function Navbar() {
     return (
         <nav
             ref={navRef}
-            className="flex items-center justify-between p-4 fixed top-0 left-0 w-full z-50 transition-colors duration-500"
+            className="flex items-center bg-[#2C3E50] justify-between p-4 fixed top-0 left-0 w-full z-50 transition-colors duration-500"
         >
 
-            <div className="flex text-xl basis-1/4 font-bold text-white align-center justify-center">
-                <a href="#">Portfolio</a>
+            <div className="flex text-xl basis-1/4 font-bold text-['#ECF0F1'] align-center justify-center">
+                <a href="#home">Portfolio</a>
             </div>
 
-            <ul className="hidden md:flex gap-8 text-white basis-1/1 justify-center">
+            <ul className="hidden md:flex gap-15 text-['#ECF0F1'] basis-1/1 justify-center">
                 {navList.map(link => (
                     <li key={link.id}>
                         <a
@@ -56,7 +56,7 @@ function Navbar() {
 
             {/* Mobile hamburger */}
             <div
-                className="md:hidden cursor-pointer z-50 text-white "
+                className="md:hidden cursor-pointer z-50 text-['#ECF0F1'] "
                 onClick={() => setMenuOpen(!menuOpen)}
             >
                 {menuOpen ? (
@@ -68,7 +68,7 @@ function Navbar() {
 
             {/* Mobile dropdown */}
             <ul
-                className={`md:hidden absolute top-16 left-0 w-full bg-[#34495E] text-white flex flex-col items-center gap-6 py-6 transition-all duration-300 ${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'
+                className={`md:hidden absolute top-16 left-0 w-full bg-[#34495E] text-['#ECF0F1'] flex flex-col items-center gap-6 py-6 transition-all duration-300 ${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'
                     }`}
             >
                 {navList.map(link => (
